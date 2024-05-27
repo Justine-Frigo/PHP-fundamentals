@@ -54,7 +54,7 @@
 
     
     date_default_timezone_set('Europe/Brussels');
-    $now = date("h:i");
+    $now = date("H:i");
 
     if ($now >= "05:00" and $now <= "09:00") {
         echo "<br>Good Morning!<br>";
@@ -225,7 +225,7 @@ if (isset($_GET['grade'])) {
         echo "<br>Not bad!";
     } else if ($grade > 14 AND $grade <= 18) {
         echo "<br>Bravo, Bravissimo!";
-    } else if ($grade == 19 or $grade == 20) {
+    } else if ($grade == 19 OR $grade == 20) {
         echo "<br>Too good to be true: confront the cheater!";
     }
 }
