@@ -17,7 +17,9 @@
 </form>
 
 <?php
-$gender = $_GET['gender'];
+
+
+$gender = isset($_GET['gender']) ? $_GET['gender'] : null;
 
 $hello = ($gender == "female") ? "Hello Miss" : "Hello Sir";
 echo $hello;
